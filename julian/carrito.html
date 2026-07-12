@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MX STORE | Carrito</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link rel="stylesheet" href="carrito.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>🏍 MOTOCROSS LAND</h1>
+
+<nav>
+
+<a href="inicio.html">
+
+<i class="fa-solid fa-house"></i>
+
+Inicio
+
+</a>
+
+<a href="perfil.html">
+
+<i class="fa-solid fa-user"></i>
+
+Perfil
+
+</a>
+
+</nav>
+
+</header>
+
+<main>
+
+<h2 style="margin-bottom:25px;">
+
+🛒 Mi Carrito
+
+</h2>
+
+<div id="listaProductos">
+
+</div>
+
+<div class="resumen">
+
+<div id="listaProductos"></div>
+
+<h2>
+Total: $
+<span id="total">0</span>
+</h2>
+
+<button onclick="vaciarCarrito()">
+Vaciar carrito
+</button>
+
+<button class="btn-envio" onclick="window.location.href='envios.html'">
+    📦 Continuar con el envío
+</button>
+
+<script src="js/carrito.js"></script>
+<script src="carrito.js"></script>
+
+</body>
+
+</html>

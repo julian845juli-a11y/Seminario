@@ -1,0 +1,189 @@
+/*=========================
+    MX STORE - STYLE.CSS
+==========================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:url("https://images.unsplash.com/photo-1517846693594-1567da72af75?auto=format&fit=crop&w=1600&q=80") no-repeat center center;
+    background-size:cover;
+}
+
+.login-body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
+    url("https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+}
+
+.login-container{
+    width:950px;
+    max-width:95%;
+    min-height:550px;
+    display:flex;
+    overflow:hidden;
+    border-radius:20px;
+    background:rgba(20,20,20,.90);
+    box-shadow:0 15px 40px rgba(0,0,0,.6);
+}
+
+.login-left{
+    flex:1;
+    color:#fff;
+    padding:60px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    background:linear-gradient(135deg,#ff6600,#111);
+}
+
+.login-left h1{
+    font-size:48px;
+    margin-bottom:15px;
+}
+
+.login-left h2{
+    font-size:30px;
+    margin-bottom:15px;
+}
+
+.login-left p{
+    font-size:18px;
+    line-height:1.7;
+    color:#ddd;
+}
+
+.login-right{
+    flex:1;
+    background:#fff;
+    padding:45px;
+}
+
+.login-right h2,
+.login-right h3{
+    text-align:center;
+    margin-bottom:20px;
+    color:#222;
+}
+
+.input-box{
+    position:relative;
+    margin-bottom:18px;
+}
+
+.input-box i{
+    position:absolute;
+    left:15px;
+    top:50%;
+    transform:translateY(-50%);
+    color:#ff6600;
+}
+
+.input-box input{
+    width:100%;
+    padding:14px 14px 14px 45px;
+    border:2px solid #ddd;
+    border-radius:10px;
+    outline:none;
+    transition:.3s;
+    font-size:15px;
+}
+
+.input-box input:focus{
+    border-color:#ff6600;
+    box-shadow:0 0 10px rgba(255,102,0,.3);
+}
+
+.btn,
+.btn2{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:17px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn{
+    background:#ff6600;
+    color:#fff;
+}
+
+.btn:hover{
+    background:#e65c00;
+    transform:translateY(-2px);
+}
+
+.btn2{
+    background:#111;
+    color:#fff;
+}
+
+.btn2:hover{
+    background:#333;
+    transform:translateY(-2px);
+}
+
+hr{
+    margin:30px 0;
+    border:none;
+    border-top:1px solid #ddd;
+}
+
+/* Animación */
+
+.login-container{
+    animation:aparecer .8s ease;
+}
+
+@keyframes aparecer{
+
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.login-container{
+    flex-direction:column;
+}
+
+.login-left{
+    text-align:center;
+    padding:40px;
+}
+
+.login-left h1{
+    font-size:35px;
+}
+
+.login-left h2{
+    font-size:24px;
+}
+
+.login-right{
+    padding:30px;
+}
+
+}

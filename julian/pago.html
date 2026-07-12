@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MX STORE | Pago</title>
+
+<link rel="stylesheet" href="pago.css">
+
+
+</head>
+<body>
+
+<header>
+
+<h1>🏍 MX STORE</h1>
+
+</header>
+
+<div class="container">
+
+<h2>💳 Selecciona tu método de pago</h2>
+
+<label class="metodo">
+<input type="radio" name="pago" value="tarjeta" onclick="mostrar('tarjeta')">
+<i class="fa-solid fa-credit-card"></i>
+Tarjeta de Crédito o Débito
+</label>
+
+<label class="metodo">
+<input type="radio" name="pago" value="paypal" onclick="mostrar('paypal')">
+<i class="fa-brands fa-paypal"></i>
+PayPal
+</label>
+
+<label class="metodo">
+<input type="radio" name="pago" value="transferencia" onclick="mostrar('transferencia')">
+<i class="fa-solid fa-building-columns"></i>
+Transferencia Bancaria
+</label>
+
+<label class="metodo">
+<input type="radio" name="pago" value="contra" onclick="mostrar('contra')">
+<i class="fa-solid fa-truck"></i>
+Pago Contra Entrega
+</label>
+
+<div id="formulario" class="formulario">
+
+<input type="text" placeholder="Nombre del titular">
+
+<input type="text" placeholder="Número de tarjeta">
+
+<input type="text" placeholder="MM/AA">
+
+<input type="text" placeholder="CVV">
+
+</div>
+
+<div id="mensaje" class="mensaje"></div>
+
+<button onclick="finalizarCompra()">
+
+Finalizar Compra
+
+</button>
+
+</div>
+
+<script src="pago.js"></script>
+
+</body>
+</html>
